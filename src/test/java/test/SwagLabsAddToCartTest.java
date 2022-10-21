@@ -11,6 +11,7 @@ import utility.SwagLabsPageElement;
 @Listeners(utility.Listneres.class)
 public class SwagLabsAddToCartTest extends SwagLabsPageElement{
 	
+	
 	@BeforeMethod
 	public void openBrowser() {
 		
@@ -22,6 +23,9 @@ public class SwagLabsAddToCartTest extends SwagLabsPageElement{
 		
 		SwagLabsAddToCartPage swagLabsAddToCartPage = new SwagLabsAddToCartPage(driver);
 		swagLabsAddToCartPage.clickOnAddToCart();
+		
+		System.out.println("New Feature added");
+		
 	}
 
 }
